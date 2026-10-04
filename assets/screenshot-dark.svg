@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif">
+  <defs>
+    <clipPath id="panelD"><rect width="640" height="460" rx="12"/></clipPath>
+    <linearGradient id="thumbD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8ec5ff"/><stop offset="1" stop-color="#2b6fc4"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#panelD)">
+    <rect width="640" height="460" fill="#262628"/>
+
+    <!-- search -->
+    <g transform="translate(12,10)">
+      <path d="M7 1.5a5.5 5.5 0 1 1-3.6 9.66l-2.2 2.2a.75.75 0 0 1-1.06-1.06l2.2-2.2A5.5 5.5 0 0 1 7 1.5Zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" fill="#a2a2ab" transform="translate(0,6)"/>
+      <text x="23" y="19" font-size="15" fill="#a2a2ab">Search history</text>
+    </g>
+    <rect x="0" y="45" width="640" height="1" fill="#ffffff1f"/>
+
+    <!-- pinned -->
+    <text x="14" y="68" font-size="11" font-weight="600" letter-spacing="0.5" fill="#a2a2ab">PINNED</text>
+    <g transform="translate(6,76)">
+      <rect width="628" height="34" rx="7" fill="#262628"/>
+      <text x="8" y="22" font-size="11" fill="#a2a2ab">⌘1</text>
+      <text x="42" y="22" font-size="13" fill="#f2f2f5">ssh deploy@staging.example.com -p 2222</text>
+      <path d="m8 1.6 1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.4l-3.8 2 .7-4.3-3.1-3 4.3-.6L8 1.6Z" fill="#6cb4ff" transform="translate(597,9)"/>
+    </g>
+
+    <!-- recent -->
+    <text x="14" y="134" font-size="11" font-weight="600" letter-spacing="0.5" fill="#a2a2ab">RECENT</text>
+    <g transform="translate(6,142)">
+      <rect width="628" height="64" rx="7" fill="#0a66d0"/>
+      <text x="8" y="36" font-size="11" fill="#ffffffd1">⌘2</text>
+      <text x="42" y="21" font-size="13" fill="#ffffff">impl Iterator for Counter {</text>
+      <text x="42" y="38" font-size="13" fill="#ffffff">    type Item = u32;</text>
+      <text x="42" y="55" font-size="13" fill="#ffffff">    fn next(&amp;mut self) -&gt; Option&lt;u32&gt; {</text>
+      <path d="m8 1.6 1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.4l-3.8 2 .7-4.3-3.1-3 4.3-.6L8 1.6Z" fill="none" stroke="#ffffffd1" stroke-width="1.3" stroke-linejoin="round" transform="translate(597,24)"/>
+    </g>
+
+    <g transform="translate(6,212)">
+      <rect width="628" height="72" rx="7" fill="#262628"/>
+      <text x="8" y="40" font-size="11" fill="#a2a2ab">⌘3</text>
+      <rect x="36" y="4" width="86" height="64" rx="5" fill="url(#thumbD)"/>
+      <path d="M36 52l22-18 16 13 14-11 34 24v8H36z" fill="#ffffff55"/>
+      <circle cx="58" cy="20" r="7" fill="#ffffff80"/>
+      <rect x="36" y="4" width="86" height="64" rx="5" fill="none" stroke="#ffffff1f"/>
+    </g>
+
+    <g transform="translate(6,290)">
+      <rect width="628" height="34" rx="7" fill="#262628"/>
+      <text x="8" y="22" font-size="11" fill="#a2a2ab">⌘4</text>
+      <text x="42" y="22" font-size="13" fill="#f2f2f5">https://doc.rust-lang.org/book/ch13-02-iterators.html</text>
+    </g>
+
+    <g transform="translate(6,328)">
+      <rect width="628" height="52" rx="7" fill="#262628"/>
+      <text x="8" y="30" font-size="11" fill="#a2a2ab">⌘5</text>
+      <text x="42" y="22" font-size="13" fill="#f2f2f5">Dear team, please find the updated schedule attached.</text>
+      <text x="42" y="40" font-size="13" fill="#f2f2f5">The review moves to Thursday, 10:00.</text>
+    </g>
+
+    <!-- status -->
+    <rect x="0" y="424" width="640" height="1" fill="#ffffff1f"/>
+    <rect x="14" y="434" width="34" height="16" rx="4" fill="#ffffff1a"/>
+    <text x="21" y="446" font-size="11" fill="#f2f2f5">⌘⇧V</text>
+    <text x="58" y="446" font-size="11" fill="#a2a2ab">↑↓ select · ⏎ paste · ⌘P pin</text>
+    <g transform="translate(600,430)" fill="none" stroke="#62626b" stroke-width="1.2" stroke-linejoin="round">
+      <path d="M6.9.9h2.2l.3 1.7 1.2.5 1.4-1 1.6 1.6-1 1.4.5 1.2 1.7.3v2.2l-1.7.3-.5 1.2 1 1.4-1.6 1.6-1.4-1-1.2.5-.3 1.7H6.9l-.3-1.7-1.2-.5-1.4 1-1.6-1.6 1-1.4-.5-1.2L1.2 9.1V6.9l1.7-.3.5-1.2-1-1.4 1.6-1.6 1.4 1 1.2-.5.3-1.7Z"/>
+      <circle cx="8" cy="8" r="2.6"/>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="639" height="459" rx="12" fill="none" stroke="#ffffff26"/>
+</svg>

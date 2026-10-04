@@ -1,0 +1,44 @@
+{
+    "$schema": "https://schema.tauri.app/config/2",
+    "productName": "Just Clipboard Manager",
+    "version": "0.1.0",
+    "identifier": "com.kutsavladyslav.clipboard-manager",
+    "build": {
+        "beforeDevCommand": "npm run dev",
+        "devUrl": "http://localhost:1420",
+        "beforeBuildCommand": "npm run build",
+        "frontendDist": "../dist"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "Just Clipboard Manager",
+                "width": 640,
+                "height": 460,
+                "minWidth": 420,
+                "minHeight": 320,
+                "center": true,
+                "alwaysOnTop": true,
+                "visibleOnAllWorkspaces": true
+            }
+        ],
+        "security": {
+            "csp": null,
+            "assetProtocol": {
+                "enable": true,
+                "scope": ["$APPDATA/images/**"]
+            }
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ]
+    }
+}
